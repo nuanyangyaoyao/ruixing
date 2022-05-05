@@ -1,0 +1,91 @@
+.menu{
+    padding: 50px 0;
+    min-height: 100vh;
+    background-color: #f4f5f2;
+    .van-nav-bar__right{
+        width: 100%;
+        padding: 0;
+    }
+    .van-search{
+        width: 100%;
+    }
+    .menu-box{
+        //商品类型
+        .menu-type{
+            width: 376px;
+            overflow-x: auto;
+            padding-bottom: 0;
+            &::-webkit-scrollbar{
+                width: 0;
+            }
+            .menu-item-box{
+                width: 470px;
+            }
+            .type-item{
+                width: 93px;
+                background-color:#fbfbfb;
+                text-align: center;
+                padding: 5px 0;
+            }
+            .item-img{
+                img{
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+            .item-name{
+                font-size: 14px;
+                font-weight: bolder;
+                color: #4e5352;
+                &.active{
+                    color: #0b34ba;
+                }
+            }
+        }
+        // 商品内容
+        .type-pro{
+            padding: 0 10px 10px;
+        }
+        .pro-item{
+            display: flex;
+            background-color: white;
+            height: 65px;
+            margin-top: 10px;
+            border-radius: 5px;
+            padding: 10px;
+            &:first-child{
+                margin-top: 0;
+            }
+            .type-pro-img{
+                width: 65px;
+                background-color: black;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+            .type-pro-info{
+                margin-left: 20px;
+                width: calc(100% - 85px);
+                height: 100%;
+                .fl{
+                    width: 200px;
+                }
+            }
+            .info-name{
+                margin-top: 10px;
+                font-size: 16px;
+                font-weight: bolder;
+                color: #4e5352;
+            }
+            .info-enname{
+                margin-top: 8px;
+                color: #989898;
+            }
+            .price{
+                line-height: 65px;
+                color: #0b34ba;
+                font-size: 14px;
+                font-weight: bolder;
+            }
+        }
+    }
+}

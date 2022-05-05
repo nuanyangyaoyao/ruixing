@@ -1,0 +1,121 @@
+.shopbag{
+    height: 100vh;
+    background-color: #F4F5F2;
+    padding: 46px 0 50px 0;
+    .nav-right-text{
+        font-weight: bolder;
+    }
+    .van-nav-bar .van-icon{
+        color: #0b34ba;
+    }
+    .van-nav-bar__text{
+        color: #0b34ba;
+    }
+    .van-nav-bar__title{
+        font-size: 18px;
+    }
+    .buttom-button{
+        background-color:#0b34ba ;
+        color: white;
+    }
+    .shopbag-bg{
+        height: 60px;
+    }
+    .products-box{
+         padding: 10px 0 90px 0;
+        
+        .pro-item{
+            margin-bottom: 15px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            .van-swipe-cell__right{
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                overflow: hidden;
+            }
+            .van-button--danger{
+                background-color: #0b34ba;
+                border-color: #0b34ba;
+                height: 100%;
+            }
+        }
+        .item-box{
+            height: 80px;
+            display: flex;
+            background-color: white;
+            margin: 0 10px;
+            .item-left{
+                width: 40px;
+                height: 80px;
+                .van-checkbox{
+                    margin: 30px 0 0 10px;
+                }
+                
+            }
+
+            .item-right{
+                width: calc(100% - 40px);
+                padding: 8px;
+                .right-content{
+                    width: 100%;
+                    background-color: white;
+                    display: flex;
+                }
+                .right-img{
+                    width: 60px;
+                    height: 64px;
+                    // background-color: black;
+                }
+                .right-info{
+                    width: calc(100% - 70px);
+                    height: 100%;
+                    margin-left: 10px;
+                }
+                .info-text{
+                    display: flex;
+                }
+                .info-name{
+                    font-size: 17px;
+                    color: #71707A;
+                }
+                .info-rule{
+                    margin-left: 10px;
+                    line-height: 22px;
+                    color: #989898;
+                }
+                .info-enname{
+                    margin-top: 5px;
+                    color: #989898;
+                }
+                .price-box{
+                    margin-top: 8px;
+                    color: #0b34ba;
+                    font-weight: bolder;
+                    font-size: 13px;
+                }
+                .van-stepper--round .van-stepper__minus{
+                    color: #989898;
+                    border-color: #989898;
+                }
+                .van-stepper--round .van-stepper__plus{
+                    background-color: #0b34ba;
+                }
+            }
+        }
+    }
+    // 提交订单
+    .van-submit-bar{
+        bottom: 50px;
+        .van-button{
+            background: #0b34ba ;
+            margin-left: auto;
+        }
+        .van-submit-bar__price{
+            color: #0b34ba ;
+        }
+    }
+    .van-checkbox__icon--checked .van-icon{
+        background-color: #0b34ba;
+    }
+}

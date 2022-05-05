@@ -1,0 +1,220 @@
+.pay{
+    height: 100vh;
+    padding: 46px 0 80px 0;
+    background-color: #F4F5F2;
+    .nav-right-text{
+        font-weight: bolder;
+    }
+    .van-nav-bar .van-icon{
+        color: #0b34ba;
+    }
+    .van-nav-bar__text{
+        color: #0b34ba;
+    }
+    .van-nav-bar__title{
+        font-size: 17px;
+    }
+    .info-box1{
+        padding: 8px 10px;
+    }
+    //收货地址
+    .select-address-box{
+        padding: 15px;
+        padding: 8px 10px;
+        height: 100px;
+        background-color: white;
+        .select{
+            line-height: 30px;
+            font-size: 10px;
+            //margin-top: 25px;
+            >span{
+                margin-right: 8px;
+            }
+        }
+        .address-info{
+            margin-top: 10px;
+            .info1{
+                display: flex;
+                margin-bottom: 10px;
+                .info-name{
+                    font-size: 16px;
+                    font-weight: bolder;
+                    color: #0b34ba;
+                }
+                .info-phone{
+                    font-size: 14px;
+                    color: #989898;
+                    font-weight: bolder;
+                    line-height: 25px;
+                    margin-left: 20px;
+                }
+            }
+            .info2{
+                color: #989898;
+            }
+        }
+    }
+    //订单信息
+    .pay-info-box{
+        background-color: white;
+        margin-top: 40px;
+        padding: 10px;
+        
+        .pay-title{
+            font-weight: bolder;
+            font-size: 14px;
+        }
+        .pay-info{
+            position: relative;
+            margin: 15px 10px 0 10px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 20px;
+        }
+        .pro-item{
+            margin-bottom: 15px;
+            &:last-chlid{
+                margin-bottom: 0;
+            }
+            .van-swipe-cell__right{
+                //right: -10px;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                overflow: hidden;
+            }
+            .van-button--danger{
+                background-color: #3378FF;
+                border-color: #3378FF;
+                height: 100%;
+            }
+        }
+        .item-box{
+            height: 65px;
+            display: flex;
+            background-color: white; 
+            .item-right{
+                width: 100%;
+                .right-content{
+                    width: 100%;
+                    background-color: white;
+                    display: flex;
+                }
+                .right-img{
+                    width: 60px;
+                    height: 65px;
+                }
+                .right-info{
+                    width: calc(100% - 30px);
+                    height: 100%;
+                    margin-left: 0 20px 0 10px;
+                    .info-box{    
+                    margin-left: 10px;
+                    }
+                }
+                .info-text{
+                    display: flex;
+                }
+                .info-name{
+                    font-size: 17px;
+                    color: #71707A;
+                }
+                .info-rule{
+                    margin-left: 10px;
+                    line-height: 22px;
+                    color: #989898;
+                }
+                .info-enname{
+                    color: #989898;
+                }
+                .price-box{
+                    margin-top: 15px;
+                    color: #0b34ba;
+                    font-weight: bolder;
+                    font-size: 13px;
+                    .fr{
+                        color: #989898;
+                        line-height: 15px;
+                        >span{
+                            vertical-align: -1px;
+                        };
+                    }
+                }
+                .van-stepper--round .van-stepper__minus{
+                    color: #989898;
+                    background-color: #989898;
+                }
+                .van-stepper--round .van-stepper__plus{
+                    background-color: #0b34ba;
+                }
+            }
+        }
+        .circle{
+            position: absolute;
+            bottom: -10px;
+            width: calc(100% - 20px);
+            height: 20px;
+            // background-color: black;
+            // opacity: .5;
+            >div{
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                background-color: #F4F5F2;
+                border-radius: 50%;
+            }
+            .circle-fl{
+               left: -25px;
+            }
+            .circle-fr{
+                right: -45px;
+            }
+        }
+        //结算
+        .pay-sum{
+            font-weight: bolder;
+            font-size: 14px;
+            margin-top: 25px;
+            .sum{
+                font-size: 13px;
+                color: #0b34ba;
+            }
+        } 
+    }
+        .pay-btn{
+            width: calc(100% - 40px);
+            position: fixed;
+            bottom: 10px;
+            background-color: #F4F5F2;
+            .van-button--normal{
+                width: 100%;
+                border-radius: 30px;
+                margin-bottom: 10px;
+            }
+        }
+        .van-popup--bottom.van-popup--round{
+            padding-top: 10px;
+        }
+        .popup-title{
+            width: 100%;
+            line-height: 40px;
+            text-align: center;
+            font-size: 17px;
+            font-weight: bolder;
+        }
+        .van-address-list__bottom{
+            background-color: transparent;
+        }
+        .van-button--danger{
+            background-color: #0b34ba;
+            border-color: #0b34ba;
+        }
+        .van-tag--danger{
+            background-color: #0b34ba;
+        }
+        .van-address-item .van-radio__icon--checked .van-icon{
+            background-color: #0b34ba;
+            border-color: #0b34ba;
+        }
+        .van-address-item__edit{
+            font-size: 0;
+        }
+}
